@@ -1,0 +1,1 @@
+"""Meeting-to-Scope package."""

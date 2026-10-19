@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meeting to Scope | BusinessLabs</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">B</span><span>BusinessLabs <b>Project desk</b></span></a>
+    <div class="top-meta"><span class="service-dot"></span><span id="service-status">Local workspace</span><span class="consent-note">Transcript consent required</span></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-title"><div><p class="eyebrow">DELIVERY WORKSPACE</p><h1>Scope projects</h1></div><button id="new-project-button" class="icon-button" title="New project">+</button></div>
+      <div id="project-list" class="project-list"><p class="muted">No projects loaded.</p></div>
+      <div class="sidebar-foot"><span class="shield">●</span><span>Drafts stay internal until a reviewer approves them.</span></div>
+    </aside>
+    <main class="main">
+      <section id="welcome" class="welcome">
+        <div class="welcome-mark">S</div>
+        <p class="eyebrow">MEETING TO SCOPE</p>
+        <h2>Turn the conversation into a reviewable plan.</h2>
+        <p>Start from a consented meeting transcript. Requirements, feasibility, estimates, and proposals remain drafts until a person approves the revision.</p>
+        <button id="welcome-create" class="button button-primary">Start a project</button>
+      </section>
+
+      <section id="project-view" class="project-view" hidden>
+        <div class="project-header">
+          <div><p class="eyebrow">PROJECT</p><h2 id="project-title"></h2><p id="project-meta" class="muted"></p></div>
+          <div class="revision-picker"><label for="revision-select">Revision</label><select id="revision-select"></select><span id="revision-status" class="status-badge"></span></div>
+        </div>
+        <div id="change-panel" class="change-panel" hidden><div class="panel-heading"><h3>Changes from approved baseline</h3><span id="baseline-label" class="muted"></span></div><p id="change-summary"></p><div id="change-list" class="change-list"></div></div>
+        <div class="content-grid">
+          <section class="column-section"><div class="section-heading"><h3>Requirements</h3><span id="requirement-count" class="small-count"></span></div><div id="requirements-list" class="requirements-list"></div></section>
+          <section class="column-section"><div class="section-heading"><h3>Effort estimate</h3><span id="estimate-range" class="small-count"></span></div><div id="estimate-list" class="estimate-list"></div><p id="estimate-notes" class="note-text"></p></section>
+        </div>
+        <div class="content-grid lower-grid">
+          <section class="document-section"><div class="section-heading"><h3>Scope of work</h3><span class="draft-tag">DRAFT</span></div><div id="scope-content" class="document-content"></div></section>
+          <section class="document-section proposal-section"><div class="section-heading"><h3>Client proposal</h3><span class="draft-tag">DRAFT</span></div><div id="proposal-content" class="document-content"></div></section>
+        </div>
+        <section class="approval-bar"><div><strong id="approval-title">Review required</strong><p id="approval-description">This revision cannot be shared until a reviewer approves it.</p></div><div id="approval-controls" class="approval-controls"><input id="reviewer-name" type="text" maxlength="200" placeholder="Reviewer name"><button id="request-changes-button" class="button button-secondary">Request changes</button><button id="approve-button" class="button button-primary">Approve revision</button></div></section>
+        <details class="transcript-details"><summary>Meeting transcript and source verification</summary><div id="transcript-meta" class="muted"></div><pre id="transcript-text"></pre></details>
+        <section id="followup-section" class="followup-section"><div class="section-heading"><div><p class="eyebrow">FOLLOW-UP MEETING</p><h3>Add a project update</h3></div></div><div class="form-grid"><label>Meeting date<input id="followup-date" type="date"></label><label class="consent-check"><input id="followup-consent" type="checkbox"><span>All participants consented to storage and AI analysis of this transcript.</span></label></div><label class="field-label" for="followup-transcript">Transcript</label><textarea id="followup-transcript" rows="7" placeholder="Paste the follow-up transcript. Keep speaker labels and timestamps where available."></textarea><button id="submit-followup" class="button button-primary">Analyze follow-up</button></section>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="new-project-dialog">
+    <form method="dialog" class="dialog-head"><div><p class="eyebrow">NEW PROJECT</p><h2>Start from a meeting</h2></div><button class="icon-button" aria-label="Close">×</button></form>
+    <div class="dialog-body"><label>Project title<input id="new-title" type="text" maxlength="200" placeholder="Website search improvements"></label><label>Meeting date<input id="new-date" type="date"></label><label class="field-label" for="new-transcript">Transcript</label><textarea id="new-transcript" rows="10" placeholder="Paste a consented transcript with speaker labels and timestamps."></textarea><label class="consent-check"><input id="new-consent" type="checkbox"><span>I confirm all participants consented to transcript storage and AI analysis.</span></label><div class="dialog-actions"><button id="create-project-button" class="button button-primary" type="button">Analyze meeting</button></div></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/ui.js"></script>
+</body>
+</html>

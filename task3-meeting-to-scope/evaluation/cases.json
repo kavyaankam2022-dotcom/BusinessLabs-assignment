@@ -1,0 +1,22 @@
+[
+  {"case_id":"SC-001","area":"transcript extraction","expected":"Extract explicit requirements from client utterances only."},
+  {"case_id":"SC-002","area":"source traceability","expected":"Each requirement cites a line, speaker, and exact transcript quote."},
+  {"case_id":"SC-003","area":"uncertainty","expected":"Mark maybe or tentative statements unclear rather than confirmed."},
+  {"case_id":"SC-004","area":"priority","expected":"Only explicit must/should/optional language assigns priority."},
+  {"case_id":"SC-005","area":"long transcript","expected":"Chunk oversized transcripts and preserve original source line numbers."},
+  {"case_id":"SC-006","area":"contradictions","expected":"Preserve conflicts and surface questions rather than choosing silently."},
+  {"case_id":"SC-007","area":"consent","expected":"Reject transcript processing without recorded consent."},
+  {"case_id":"SC-008","area":"knowledge integration","expected":"Call the shared Knowledge Brain API with a bounded timeout."},
+  {"case_id":"SC-009","area":"feasibility abstention","expected":"Treat missing or insufficient evidence as needs clarification."},
+  {"case_id":"SC-010","area":"configuration feasibility","expected":"Cite sources before classifying documented settings as existing configuration."},
+  {"case_id":"SC-011","area":"custom-work safety","expected":"Require human confirmation before labeling unsupported scope custom development."},
+  {"case_id":"SC-012","area":"acceptance criteria","expected":"Use transcript criteria or explicitly request client confirmation."},
+  {"case_id":"SC-013","area":"scope quality","expected":"Separate confirmed requirements, exclusions, dependencies, and open questions."},
+  {"case_id":"SC-014","area":"estimation ranges","expected":"Enforce low <= likely <= high hours for every task."},
+  {"case_id":"SC-015","area":"uncertain estimates","expected":"Estimate discovery only until implementation feasibility is confirmed."},
+  {"case_id":"SC-016","area":"proposal safety","expected":"Do not invent price or calendar delivery commitments."},
+  {"case_id":"SC-017","area":"baseline comparison","expected":"Compare follow-up changes only against the latest approved revision."},
+  {"case_id":"SC-018","area":"change detection","expected":"Identify follow-up additions, modifications, and explicit removals."},
+  {"case_id":"SC-019","area":"out-of-scope","expected":"Flag requests missing from an approved baseline without silently adding them."},
+  {"case_id":"SC-020","area":"approval audit","expected":"Require reviewer identity and retain revision decision history."}
+]

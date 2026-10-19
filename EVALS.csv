@@ -1,0 +1,7 @@
+task,case_id,model,expected,actual,quality,latency_ms,cost,passed,failure_reason
+knowledge,KB-SMOKE,deterministic-unit-tests,"Knowledge Brain API contract and retrieval logic remain correct","15 passed, 0 failed",1.0,0,0,1,"n/a"
+inbox,IN-SMOKE,deterministic-unit-tests,"Inbox classification, fail-closed knowledge checks, and review workflow pass","35 passed, 0 failed",1.0,0,0,1,"n/a"
+scope,SC-SMOKE,deterministic-unit-tests,"Meeting-to-scope API and revision safety rules remain correct","29 passed, 0 failed",1.0,0,0,1,"n/a"
+knowledge,KB-LIVE,claude-3-5-haiku-latest,"Live knowledge retrieval and answer quality benchmark","pending","pending",0,0,0,"not run"
+inbox,IN-LIVE,claude-3-5-haiku-latest,"Live inbox drafting benchmark with grounded evidence","pending","pending",0,0,0,"not run"
+scope,SC-LIVE,claude-3-5-sonnet-latest,"Live transcript extraction and proposal quality benchmark","pending","pending",0,0,0,"not run"

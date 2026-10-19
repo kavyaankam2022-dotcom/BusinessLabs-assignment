@@ -1,0 +1,9 @@
+[00:00] Client: Our website search isn't great. We want customers to find providers faster, and we would like filters. Maybe add AI as well.
+[00:22] Consultant: What do customers search for today, and what does faster mean to your team?
+[00:37] Client: Most visitors search by service and area. The category filter is required before our winter campaign.
+[00:55] Client: We might add a price filter, but we need to see the current product settings first.
+[01:12] Client: Phone customers have trouble using the search controls. We want the filters to work on mobile too.
+[01:30] Consultant: Do you have a target device list or acceptance criteria for mobile?
+[01:42] Client: Not yet. We can send examples of the three phone sizes customers use most.
+[02:00] Client: We hope to launch by November 30, but that date depends on campaign approval.
+[02:18] Consultant: We will check the documented search configuration before estimating custom work.

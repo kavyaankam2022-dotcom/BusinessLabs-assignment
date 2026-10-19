@@ -1,0 +1,912 @@
+[
+  {
+    "id": "IN-001",
+    "split": "development",
+    "subject": "Update the header logo",
+    "from": "Mina Patel <mina@example.test>",
+    "body": "Hi, where do I replace the logo that appears in the top left of our site? I have a new PNG ready.",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Logo update navigation is not known until verified in Knowledge Brain."
+    ],
+    "expectedBehavior": "Use cited product guidance; do not guess a menu path."
+  },
+  {
+    "id": "IN-002",
+    "split": "development",
+    "subject": "Change a staff profile photo",
+    "from": "Elliot Park <elliot@example.test>",
+    "body": "Could you point me to the setting where an administrator changes a team member's profile picture?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Profile image setting location requires source evidence."
+    ],
+    "expectedBehavior": "Answer only from retrieved documentation and cite it."
+  },
+  {
+    "id": "IN-003",
+    "split": "development",
+    "subject": "Add a second admin",
+    "from": "Rosa Kim <rosa@example.test>",
+    "body": "I need to give my colleague administrator access. What is the supported way to add another admin user?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Admin-user workflow must be sourced."
+    ],
+    "expectedBehavior": "Use a relevant cited article or request expert help if no evidence is found."
+  },
+  {
+    "id": "IN-004",
+    "split": "development",
+    "subject": "Change the contact form recipient",
+    "from": "Owen Reed <owen@example.test>",
+    "body": "New inquiry emails should go to our shared inbox instead of me. Where can I update the recipient?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Contact-form recipient setting must be verified."
+    ],
+    "expectedBehavior": "Give evidence-based steps and preserve the source URL."
+  },
+  {
+    "id": "IN-005",
+    "split": "development",
+    "subject": "Hide one navigation item",
+    "from": "Nadia Cole <nadia@example.test>",
+    "body": "Can I hide the Events link from the main menu without deleting the events page?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Navigation visibility behavior needs documentation."
+    ],
+    "expectedBehavior": "Distinguish hide from delete only if documentation supports it."
+  },
+  {
+    "id": "IN-006",
+    "split": "development",
+    "subject": "Update our footer text",
+    "from": "Leo Brooks <leo@example.test>",
+    "body": "I want to change the copyright line in the site footer. Which editor controls that text?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Footer editor location needs source evidence."
+    ],
+    "expectedBehavior": "Cite supported instructions and avoid invented UI labels."
+  },
+  {
+    "id": "IN-007",
+    "split": "development",
+    "subject": "Set a page as the homepage",
+    "from": "Sara Ahmed <sara@example.test>",
+    "body": "We created a new landing page. How do I choose it as the homepage?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Homepage selection steps require verified docs."
+    ],
+    "expectedBehavior": "Answer only when retrieval supports the workflow."
+  },
+  {
+    "id": "IN-008",
+    "split": "development",
+    "subject": "Change the default language",
+    "from": "Caleb Moore <caleb@example.test>",
+    "body": "Where do I select the default language visitors see when they first open the site?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Language configuration depends on product documentation."
+    ],
+    "expectedBehavior": "Cite a product source or abstain."
+  },
+  {
+    "id": "IN-009",
+    "split": "development",
+    "subject": "Add a custom field to signup",
+    "from": "Ivy Chen <ivy@example.test>",
+    "body": "Can the registration form ask members for their preferred service area? Where are signup fields configured?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Signup-field configuration must be verified."
+    ],
+    "expectedBehavior": "Do not promise custom development; distinguish documented settings from gaps."
+  },
+  {
+    "id": "IN-010",
+    "split": "development",
+    "subject": "Edit an automated welcome message",
+    "from": "Miles Turner <miles@example.test>",
+    "body": "New members receive a welcome email. Can I edit its wording, and where is that template?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Welcome-email template location requires evidence."
+    ],
+    "expectedBehavior": "Cite the template workflow if available."
+  },
+  {
+    "id": "IN-011",
+    "split": "development",
+    "subject": "Set a listing expiration period",
+    "from": "Amara Singh <amara@example.test>",
+    "body": "How do I change how long a directory listing remains active before it expires?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Listing expiration setting must be sourced."
+    ],
+    "expectedBehavior": "Avoid asserting billing or plan effects without evidence."
+  },
+  {
+    "id": "IN-012",
+    "split": "development",
+    "subject": "Change the map display",
+    "from": "Theo James <theo@example.test>",
+    "body": "Is there a setting to show map results before the list of nearby providers?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Map/list display configuration requires documentation."
+    ],
+    "expectedBehavior": "Ground the response and cite the supporting article."
+  },
+  {
+    "id": "IN-013",
+    "split": "development",
+    "subject": "Card payments are failing",
+    "from": "June Alvarez <june@example.test>",
+    "body": "Customers get an error at checkout when paying by card. It started this morning. What should I check first?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Payment troubleshooting steps need source evidence."
+    ],
+    "expectedBehavior": "Ask for safe diagnostic details and escalate unsupported payment guidance."
+  },
+  {
+    "id": "IN-014",
+    "split": "development",
+    "subject": "Members cannot sign in",
+    "from": "Felix Ward <felix@example.test>",
+    "body": "Several members say login keeps failing after they reset their passwords. Can you help us troubleshoot?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Login recovery guidance must be sourced."
+    ],
+    "expectedBehavior": "Do not request passwords or authentication secrets."
+  },
+  {
+    "id": "IN-015",
+    "split": "development",
+    "subject": "Search returns an error",
+    "from": "Priya Nair <priya@example.test>",
+    "body": "The directory search page shows an error instead of results for every query. What diagnostics should I collect?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Search diagnostic steps require evidence."
+    ],
+    "expectedBehavior": "Ask for non-sensitive context and use citations or escalate."
+  },
+  {
+    "id": "IN-016",
+    "split": "development",
+    "subject": "Images fail to upload",
+    "from": "Ben Foster <ben@example.test>",
+    "body": "Profile photos fail to upload and the page times out. We tried two image files. What could we check?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Upload limits and supported formats must be verified."
+    ],
+    "expectedBehavior": "Do not invent file limits; request file type/size without collecting private data."
+  },
+  {
+    "id": "IN-017",
+    "split": "development",
+    "subject": "Webhook notifications stopped",
+    "from": "Lena Ortiz <lena@example.test>",
+    "body": "Our order webhook stopped working yesterday. The receiving endpoint is online, but no events arrive.",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Webhook retry and delivery behavior needs documentation."
+    ],
+    "expectedBehavior": "Avoid claiming delivery guarantees; gather event/time details and cite evidence."
+  },
+  {
+    "id": "IN-018",
+    "split": "development",
+    "subject": "The dashboard is loading slowly",
+    "from": "Drew Ellis <drew@example.test>",
+    "body": "The admin dashboard has been very slow this week and sometimes never finishes loading. What information would help investigate?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Performance troubleshooting steps need sources."
+    ],
+    "expectedBehavior": "Ask for browser, timing, and affected page; do not promise a fix date."
+  },
+  {
+    "id": "IN-019",
+    "split": "development",
+    "subject": "Booking confirmation emails are missing",
+    "from": "Yara Hassan <yara@example.test>",
+    "body": "Bookings complete, but neither the customer nor our staff receives a confirmation email. Can you help find the issue?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Notification troubleshooting requires product evidence."
+    ],
+    "expectedBehavior": "Check documented notification settings and escalate if evidence is insufficient."
+  },
+  {
+    "id": "IN-020",
+    "split": "development",
+    "subject": "CSV import rejects valid rows",
+    "from": "Noah Price <noah@example.test>",
+    "body": "The member import keeps rejecting rows that look valid. What format and error details should I send?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Import format requirements need source verification."
+    ],
+    "expectedBehavior": "Request a redacted sample and error text; do not request full personal data."
+  },
+  {
+    "id": "IN-021",
+    "split": "development",
+    "subject": "Mobile menu will not open",
+    "from": "Ava Bennett <ava@example.test>",
+    "body": "On two Android phones the mobile menu button does not open anything. Desktop navigation works normally.",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Mobile menu troubleshooting requires evidence."
+    ],
+    "expectedBehavior": "Collect browser/device details without claiming known cause."
+  },
+  {
+    "id": "IN-022",
+    "split": "development",
+    "subject": "Search filters disappear",
+    "from": "Samir Das <samir@example.test>",
+    "body": "After I save the search page, the selected filters disappear when I reload. Is there a setting I missed?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Search-filter persistence behavior needs evidence."
+    ],
+    "expectedBehavior": "Use documentation or escalate; do not claim a configuration exists."
+  },
+  {
+    "id": "IN-023",
+    "split": "development",
+    "subject": "Add appointment booking",
+    "from": "Maya Brooks <maya@example.test>",
+    "body": "We want customers to book 30-minute consultations online and receive reminders. Can your team build this for us?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Booking feature capabilities require feasibility review."
+    ],
+    "expectedBehavior": "Route to scope review; make no delivery, feature, or pricing commitment."
+  },
+  {
+    "id": "IN-024",
+    "split": "development",
+    "subject": "Connect our inventory system",
+    "from": "Ethan Gray <ethan@example.test>",
+    "body": "Could you integrate our warehouse inventory platform so stock levels update on the directory site?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Integration support is unverified until feasibility check."
+    ],
+    "expectedBehavior": "Acknowledge and ask for vendor/API details; require human scoping."
+  },
+  {
+    "id": "IN-025",
+    "split": "development",
+    "subject": "Build a provider comparison page",
+    "from": "Kim Nguyen <kim@example.test>",
+    "body": "We need a page that compares providers by price, distance, and two custom ratings. Is this something you can develop?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Comparison feature scope and existing capability need review."
+    ],
+    "expectedBehavior": "Do not commit to implementation or timeline."
+  },
+  {
+    "id": "IN-026",
+    "split": "development",
+    "subject": "Add multilingual member profiles",
+    "from": "Olivia Ross <olivia@example.test>",
+    "body": "Can members maintain a profile in both English and French, with visitors switching between versions?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Multilingual profile support is unverified."
+    ],
+    "expectedBehavior": "Route for feasibility and clarify languages/content ownership."
+  },
+  {
+    "id": "IN-027",
+    "split": "development",
+    "subject": "Import data from our old directory",
+    "from": "Arjun Mehta <arjun@example.test>",
+    "body": "We are moving from another directory and need our listings, photos, and member accounts migrated. Can you handle the import?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Migration capabilities and data scope need technical review."
+    ],
+    "expectedBehavior": "Request sample/schema and route to scoping without promises."
+  },
+  {
+    "id": "IN-028",
+    "split": "development",
+    "subject": "Create a private member area",
+    "from": "Grace Liu <grace@example.test>",
+    "body": "We want a members-only resource area with different access levels for three membership tiers. Please advise on next steps.",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Tiered access capability needs product feasibility review."
+    ],
+    "expectedBehavior": "Check existing documented features and require human scope approval."
+  },
+  {
+    "id": "IN-029",
+    "split": "development",
+    "subject": "Cancel my subscription and refund last month",
+    "from": "Andre Silva <andre@example.test>",
+    "body": "Please cancel my subscription and refund the charge from last month. I did not mean to renew.",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "No refund or cancellation policy is provided in this email."
+    ],
+    "expectedBehavior": "Acknowledge, do not promise a refund or cancellation; route to an authorized human."
+  },
+  {
+    "id": "IN-030",
+    "split": "development",
+    "subject": "Stop renewal for our account",
+    "from": "Nina Clarke <nina@example.test>",
+    "body": "Our team has decided not to renew next quarter. Can you stop the renewal and confirm any remaining balance?",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Renewal and balance policy require account review."
+    ],
+    "expectedBehavior": "Do not claim account changes are completed or state a balance without authorization."
+  },
+  {
+    "id": "IN-031",
+    "split": "development",
+    "subject": "I was billed twice",
+    "from": "Peter Walsh <peter@example.test>",
+    "body": "My card statement shows two charges with the same date. Please check whether one can be refunded.",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Billing records and refund eligibility are not in the knowledge base."
+    ],
+    "expectedBehavior": "Request a secure billing-channel follow-up; never ask for full card details."
+  },
+  {
+    "id": "IN-032",
+    "split": "development",
+    "subject": "Cancel one of our two sites",
+    "from": "Fatima Noor <fatima@example.test>",
+    "body": "We are keeping one site and want to cancel the other. Will the unused time be refunded?",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Cancellation and prorating terms are unknown."
+    ],
+    "expectedBehavior": "Separate the cancellation request from refund eligibility and require authorized review."
+  },
+  {
+    "id": "IN-033",
+    "split": "development",
+    "subject": "Request a refund for the setup charge",
+    "from": "Eli Morgan <eli@example.test>",
+    "body": "We have not launched yet and would like the initial setup charge returned. What is your policy?",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Setup-fee refund policy is not included."
+    ],
+    "expectedBehavior": "Do not state a policy; route for human billing review."
+  },
+  {
+    "id": "IN-034",
+    "split": "development",
+    "subject": "End service at month end",
+    "from": "Zoe Carter <zoe@example.test>",
+    "body": "Please cancel our service effective at the end of this month and let me know what steps are required.",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Cancellation workflow and effective dates must be confirmed."
+    ],
+    "expectedBehavior": "Acknowledge request without claiming cancellation has been processed."
+  },
+  {
+    "id": "IN-035",
+    "split": "development",
+    "subject": "The update broke our directory",
+    "from": "Marcus Hill <marcus@example.test>",
+    "body": "I am very frustrated. Since yesterday's update, our directory pages are broken and customers cannot reach listings. This is hurting our business.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Cause and remediation are not yet verified."
+    ],
+    "expectedBehavior": "Empathize, treat as urgent, gather impact details, and escalate without promising a fix time."
+  },
+  {
+    "id": "IN-036",
+    "split": "development",
+    "subject": "We have asked three times for help",
+    "from": "Lila Evans <lila@example.test>",
+    "body": "This is unacceptable. We have contacted support three times about missing notifications and still have no answer.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Prior contact history and notification cause need review."
+    ],
+    "expectedBehavior": "Acknowledge frustration and arrange human follow-up; do not invent ticket history."
+  },
+  {
+    "id": "IN-037",
+    "split": "development",
+    "subject": "Listings are showing the wrong address",
+    "from": "Omar Flores <omar@example.test>",
+    "body": "Customers are seeing an incorrect location for several listings. We are disappointed this was not caught before launch.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Affected records and root cause are unknown."
+    ],
+    "expectedBehavior": "Recognize potential customer impact and route for urgent human review."
+  },
+  {
+    "id": "IN-038",
+    "split": "development",
+    "subject": "Your team changed our page without asking",
+    "from": "Holly King <holly@example.test>",
+    "body": "I am not happy that the page layout changed. We did not approve this and need someone to explain what happened.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Change history is not included in the message."
+    ],
+    "expectedBehavior": "Do not speculate about who made the change; investigate and escalate."
+  },
+  {
+    "id": "IN-039",
+    "split": "development",
+    "subject": "Slow response during launch week",
+    "from": "Dev Shah <dev@example.test>",
+    "body": "We are disappointed with how long it took to hear back while preparing for launch. Can a manager contact us?",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Support history should be checked by a person."
+    ],
+    "expectedBehavior": "Acknowledge and route to a manager without disputing the customer's experience."
+  },
+  {
+    "id": "IN-040",
+    "split": "development",
+    "subject": "Payment form is confusing customers",
+    "from": "Tess Young <tess@example.test>",
+    "body": "Several customers told us the payment page is confusing. We are unhappy with the experience and need help quickly.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Payment UX issue and account setup need investigation."
+    ],
+    "expectedBehavior": "Acknowledge concern, gather examples safely, and escalate."
+  },
+  {
+    "id": "IN-041",
+    "split": "development",
+    "subject": "Price for a custom reporting page",
+    "from": "Reese Allen <reese@example.test>",
+    "body": "How much would it cost to add a reporting page showing signups by region and month?",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "No scope, rate, or pricing approval is provided."
+    ],
+    "expectedBehavior": "Do not quote a price; clarify requirements and route for estimation."
+  },
+  {
+    "id": "IN-042",
+    "split": "development",
+    "subject": "Estimate for a payment gateway",
+    "from": "Sofia Bell <sofia@example.test>",
+    "body": "Could you send a quote for connecting our site to a second payment provider? We need an estimate before budgeting.",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Provider compatibility and commercial rate are unverified."
+    ],
+    "expectedBehavior": "Ask for provider details and route for feasibility and approved estimate."
+  },
+  {
+    "id": "IN-043",
+    "split": "development",
+    "subject": "What is the cost to refresh our theme?",
+    "from": "Jay Patel <jay@example.test>",
+    "body": "We are considering a visual refresh of our home page and member pages. What would the price range be?",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "No price list or scoped estimate is available."
+    ],
+    "expectedBehavior": "Do not invent a range; invite a scoping discussion."
+  },
+  {
+    "id": "IN-044",
+    "split": "development",
+    "subject": "Quote for importing 8,000 listings",
+    "from": "Molly West <molly@example.test>",
+    "body": "Please estimate the cost to import around 8,000 listings with photos from our current provider.",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Data format, quality, and rates need review."
+    ],
+    "expectedBehavior": "Explain that a quote needs technical review; request a redacted sample."
+  },
+  {
+    "id": "IN-045",
+    "split": "development",
+    "subject": "Monthly support plan options",
+    "from": "Ken Ito <ken@example.test>",
+    "body": "Can you share pricing for ongoing support and small content changes each month?",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Current support plans and prices are not given."
+    ],
+    "expectedBehavior": "Do not fabricate plan terms; route to an authorized commercial contact."
+  },
+  {
+    "id": "IN-046",
+    "split": "development",
+    "subject": "Checking in on my settings question",
+    "from": "Erin Wood <erin@example.test>",
+    "body": "I am checking in on my message from last week about changing our notification settings. Did you receive it?",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Prior message is not included in this email."
+    ],
+    "expectedBehavior": "Acknowledge follow-up and ask for the prior thread or ticket reference if unavailable."
+  },
+  {
+    "id": "IN-047",
+    "split": "development",
+    "subject": "Any update on the import issue?",
+    "from": "Luis Romero <luis@example.test>",
+    "body": "Following up on the CSV import problem I sent yesterday. We still cannot add new members.",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Prior diagnostics and case status are unavailable."
+    ],
+    "expectedBehavior": "Recognize impact and route to case owner; do not invent progress."
+  },
+  {
+    "id": "IN-048",
+    "split": "development",
+    "subject": "Did my cancellation request go through?",
+    "from": "Beth Miller <beth@example.test>",
+    "body": "I sent a cancellation request earlier this week but have not received confirmation. Could someone check?",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Account state and cancellation status require lookup."
+    ],
+    "expectedBehavior": "Do not state cancellation status without account access; escalate to billing staff."
+  },
+  {
+    "id": "IN-049",
+    "split": "development",
+    "subject": "Following up after our demo",
+    "from": "Ravi Shah <ravi@example.test>",
+    "body": "Thanks for the product demo. I am following up on whether the search filters we discussed are available today.",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Demo notes are absent; feature capability requires Knowledge Brain evidence."
+    ],
+    "expectedBehavior": "Ask for context or check documented capability; do not imply a commitment."
+  },
+  {
+    "id": "IN-050",
+    "split": "development",
+    "subject": "Checking on the revised proposal",
+    "from": "Claire Fox <claire@example.test>",
+    "body": "We sent our comments on the proposal two days ago and are checking whether you received them. Our review meeting is Friday.",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Proposal comments and review status are not attached."
+    ],
+    "expectedBehavior": "Acknowledge, retrieve the relevant thread, and avoid claiming the proposal was revised."
+  },
+  {
+    "id": "IN-051",
+    "split": "development",
+    "subject": "Add a site favicon",
+    "from": "Dani Ellis <dani@example.test>",
+    "body": "Can I upload a small icon that appears in the browser tab? Where would I change it?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Favicon configuration requires documentation."
+    ],
+    "expectedBehavior": "Use product evidence or escalate rather than inventing the setting path."
+  },
+  {
+    "id": "IN-052",
+    "split": "development",
+    "subject": "Change the listing button label",
+    "from": "Harper Mills <harper@example.test>",
+    "body": "I would like to rename the button that visitors use to contact a provider. Is that text configurable?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Button label customization must be verified."
+    ],
+    "expectedBehavior": "Answer from sources and do not assume theme customization options."
+  },
+  {
+    "id": "IN-053",
+    "split": "development",
+    "subject": "Set the site timezone",
+    "from": "Rory James <rory@example.test>",
+    "body": "Our event times appear in a different timezone. Which setting controls the site's timezone?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Timezone behavior and setting need evidence."
+    ],
+    "expectedBehavior": "Cite supported configuration steps or request expert review."
+  },
+  {
+    "id": "IN-054",
+    "split": "development",
+    "subject": "Export a member list",
+    "from": "Talia Green <talia@example.test>",
+    "body": "I need a copy of our member directory for an internal review. Does the admin area have an export option?",
+    "expectedCategory": "how_to",
+    "expectedRisk": "low",
+    "expectedFacts": [
+      "Export availability and privacy limitations need source review."
+    ],
+    "expectedBehavior": "Do not promise an export or suggest bypassing access controls."
+  },
+  {
+    "id": "IN-055",
+    "split": "development",
+    "subject": "Checkout fails in Safari",
+    "from": "Micah Stone <micah@example.test>",
+    "body": "Checkout returns an error in Safari on iPhones, but appears to work on my laptop. What should I send to support?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Browser/payment troubleshooting needs documentation."
+    ],
+    "expectedBehavior": "Ask for non-sensitive error details and cite supported guidance."
+  },
+  {
+    "id": "IN-056",
+    "split": "development",
+    "subject": "Import job never completes",
+    "from": "Ari Kim <ari@example.test>",
+    "body": "The image import fails to finish after processing the first few records. Can I retry it safely?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Import retry behavior is not confirmed."
+    ],
+    "expectedBehavior": "Do not recommend repeating a potentially duplicating operation without evidence."
+  },
+  {
+    "id": "IN-057",
+    "split": "development",
+    "subject": "Cannot save profile changes",
+    "from": "Niko Bell <niko@example.test>",
+    "body": "The profile editor throws an error when I save a phone number. It happens on every attempt.",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Profile validation rules need source verification."
+    ],
+    "expectedBehavior": "Request the exact error and a redacted example, not personal phone data."
+  },
+  {
+    "id": "IN-058",
+    "split": "development",
+    "subject": "Confirmation email is delayed",
+    "from": "Mara King <mara@example.test>",
+    "body": "The booking confirmation email is not arriving for customers until several minutes later. Is there a documented delivery delay?",
+    "expectedCategory": "troubleshooting",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Email delivery timing and expected behavior are unknown."
+    ],
+    "expectedBehavior": "Do not invent delivery guarantees; gather timestamps and escalate if unsupported."
+  },
+  {
+    "id": "IN-059",
+    "split": "development",
+    "subject": "Develop a saved-search feature",
+    "from": "Kris Lane <kris@example.test>",
+    "body": "Could your team develop saved searches so members can return to the same filters later?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Saved-search capability and effort require feasibility review."
+    ],
+    "expectedBehavior": "Route to product/scope review without promising availability or timing."
+  },
+  {
+    "id": "IN-060",
+    "split": "development",
+    "subject": "Integrate our CRM",
+    "from": "Nell Park <nell@example.test>",
+    "body": "We want new directory inquiries copied into our CRM. Can you build an integration with the vendor we use?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "CRM vendor and integration capability are not yet verified."
+    ],
+    "expectedBehavior": "Ask for vendor/API context and route to feasibility review."
+  },
+  {
+    "id": "IN-061",
+    "split": "development",
+    "subject": "Build an approval step for listings",
+    "from": "Seth Young <seth@example.test>",
+    "body": "We need every new listing reviewed by a moderator before it becomes public. Can this workflow be added?",
+    "expectedCategory": "project_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Moderation workflow capability needs product review."
+    ],
+    "expectedBehavior": "Check existing settings through the Knowledge Brain and avoid custom-work commitments."
+  },
+  {
+    "id": "IN-062",
+    "split": "development",
+    "subject": "Refund for an accidental renewal",
+    "from": "Ada Fox <ada@example.test>",
+    "body": "Our plan renewed yesterday by mistake. Please reverse the renewal charge if that is possible.",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Refund eligibility and account state are not supplied."
+    ],
+    "expectedBehavior": "Acknowledge and route to an authorized billing reviewer; make no promise."
+  },
+  {
+    "id": "IN-063",
+    "split": "development",
+    "subject": "Close our account",
+    "from": "Jules Reed <jules@example.test>",
+    "body": "Please close our account at the end of the current billing period. We also need to know whether data export is available.",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Account closure and data export policies require review."
+    ],
+    "expectedBehavior": "Do not claim account closure or data retention terms without authorization."
+  },
+  {
+    "id": "IN-064",
+    "split": "development",
+    "subject": "Cancel the duplicate subscription",
+    "from": "Emery West <emery@example.test>",
+    "body": "I think we have two active subscriptions for the same site. Can you cancel one and confirm which account remains?",
+    "expectedCategory": "refund_cancellation",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Account identity and billing state need secure review."
+    ],
+    "expectedBehavior": "Do not change or disclose account status; escalate to billing."
+  },
+  {
+    "id": "IN-065",
+    "split": "development",
+    "subject": "Listings disappeared after maintenance",
+    "from": "Robin Cruz <robin@example.test>",
+    "body": "This is unacceptable: dozens of our listings disappeared after the maintenance window, and customers are calling us.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Data state and incident cause are not established."
+    ],
+    "expectedBehavior": "Acknowledge impact, treat as urgent, and escalate without assuring restoration."
+  },
+  {
+    "id": "IN-066",
+    "split": "development",
+    "subject": "Repeated billing problem",
+    "from": "Cory Nash <cory@example.test>",
+    "body": "I am very frustrated that we have to contact you again about the same billing problem. Please have a person review this.",
+    "expectedCategory": "complaint",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Prior billing history requires account review."
+    ],
+    "expectedBehavior": "Acknowledge and escalate; do not expose or infer account details."
+  },
+  {
+    "id": "IN-067",
+    "split": "development",
+    "subject": "Budgetary quote for a theme change",
+    "from": "Milo Day <milo@example.test>",
+    "body": "Could you provide a quote for updating the colors and layout across our member pages?",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "No approved rate or scope is available."
+    ],
+    "expectedBehavior": "Ask clarifying questions and route for a formal estimate; do not state a price."
+  },
+  {
+    "id": "IN-068",
+    "split": "development",
+    "subject": "Estimate to migrate profiles",
+    "from": "Cleo James <cleo@example.test>",
+    "body": "Before we decide, we need a quote to migrate roughly 2,000 member profiles from our old platform.",
+    "expectedCategory": "quote_request",
+    "expectedRisk": "high",
+    "expectedFacts": [
+      "Data format and pricing assumptions need investigation."
+    ],
+    "expectedBehavior": "Do not invent costs; request a redacted sample and route to estimation."
+  },
+  {
+    "id": "IN-069",
+    "split": "development",
+    "subject": "Checking in about the map question",
+    "from": "Pax Wood <pax@example.test>",
+    "body": "I am checking in on the map display question I sent on Monday. Has anyone had a chance to review it?",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Prior question and current ownership are not provided."
+    ],
+    "expectedBehavior": "Acknowledge and retrieve the previous thread; do not claim progress."
+  },
+  {
+    "id": "IN-070",
+    "split": "development",
+    "subject": "Any update on our launch issue?",
+    "from": "Remy Hart <remy@example.test>",
+    "body": "Any update on the launch issue we discussed yesterday? We are waiting before making the site public.",
+    "expectedCategory": "follow_up",
+    "expectedRisk": "medium",
+    "expectedFacts": [
+      "Prior incident status is unknown."
+    ],
+    "expectedBehavior": "Treat as time-sensitive and get the case owner; do not invent a resolution."
+  }
+]

@@ -1,0 +1,6 @@
+[00:00] Client: We reviewed the search plan from our first meeting. We no longer need the category filter; the team can handle that in the existing directory setup.
+[00:24] Client: Please add a location filter instead, with city and postal code options.
+[00:41] Client: Change the campaign target from November 30 to January 15 because the content review moved.
+[00:58] Client: Maybe include voice search too, but we have not decided what languages it must understand.
+[01:15] Consultant: We will compare those changes against the approved search baseline, not the unapproved proposal draft.
+[01:29] Client: We agree that mobile support remains required. We will send device examples and approve measurable acceptance criteria.

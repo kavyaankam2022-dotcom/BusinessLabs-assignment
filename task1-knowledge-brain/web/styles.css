@@ -1,0 +1,232 @@
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --panel-soft: #edf3ff;
+  --border: #dfe8f5;
+  --text: #14233b;
+  --muted: #5c6f8d;
+  --primary: #2458ff;
+  --primary-soft: rgba(36, 88, 255, 0.1);
+  --success: #0d9f72;
+  --warning: #a75a00;
+  --danger: #c33d3d;
+  --shadow: 0 18px 45px rgba(21, 36, 56, 0.09);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(180deg, #f6f8fc 0%, #eef4ff 100%);
+  color: var(--text);
+}
+
+.page-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1b47ff, #6da4ff);
+  color: white;
+  font-weight: 700;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 0.9fr);
+  gap: 24px;
+}
+
+.chat-panel,
+.meta-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.chat-panel {
+  padding: 28px;
+}
+
+.chat-panel h1 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fbfcff;
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--text);
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 11px 20px;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover { transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+.primary-button {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+}
+
+.secondary-button {
+  background: #edf2ff;
+  color: var(--text);
+}
+
+.answer-box {
+  margin-top: 22px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #f9fbff 0%, #f1f6ff 100%);
+  padding: 18px 16px;
+  min-height: 180px;
+  line-height: 1.6;
+}
+
+.empty-state {
+  color: var(--muted);
+}
+
+.meta-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.meta-card {
+  padding: 18px 18px 12px;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.state-badge,
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.status-pill.idle,
+.state-badge.neutral {
+  background: var(--panel-soft);
+  color: var(--muted);
+}
+
+.status-pill.pending,
+.state-badge.warning {
+  background: #fff4df;
+  color: var(--warning);
+}
+
+.status-pill.success,
+.state-badge.success {
+  background: #e7fff3;
+  color: var(--success);
+}
+
+.status-pill.error,
+.state-badge.error {
+  background: #ffe9e9;
+  color: var(--danger);
+}
+
+.source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.source-list li {
+  background: #f7f9fe;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}

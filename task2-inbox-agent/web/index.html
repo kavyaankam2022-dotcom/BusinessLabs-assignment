@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inbox Review | BusinessLabs</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="BusinessLabs Inbox home">
+        <span class="brand-mark">B</span>
+        <span>BusinessLabs <b>Support</b></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="service-indicator"><i></i><span id="service-status">Connecting to services</span></span>
+        <span class="delivery-note">Email delivery is simulated</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Inbox navigation">
+        <div class="sidebar-heading">
+          <div>
+            <p class="eyebrow">WORKSPACE</p>
+            <h1>Inbox review</h1>
+          </div>
+          <span id="pending-count" class="count-pill">0</span>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Search emails" aria-label="Search emails">
+          <kbd>/</kbd>
+        </label>
+        <div class="filter-heading"><span>QUEUE</span><button id="refresh-button" class="quiet-button" title="Refresh inbox">Refresh</button></div>
+        <nav id="category-filters" class="category-filters" aria-label="Filter by category"></nav>
+        <div class="mail-list-heading"><span>MESSAGES</span><span id="email-count">0</span></div>
+        <div id="email-list" class="email-list" role="list"></div>
+        <div class="autonomy-panel">
+          <div class="autonomy-title"><span>Approval streaks</span><span class="lock-mark" title="No email is auto-sent by this demo">Review</span></div>
+          <p>20 unchanged sends make a safe category eligible for a controlled trial. Review remains required here.</p>
+          <div id="autonomy-list" class="autonomy-list"></div>
+          <p class="feedback-title">Review patterns</p>
+          <div id="feedback-list" class="feedback-list"><span class="muted">No corrections recorded.</span></div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <section id="empty-state" class="empty-state">
+          <div class="empty-symbol" aria-hidden="true">↳</div>
+          <p class="eyebrow">CUSTOMER SUPPORT</p>
+          <h2>Select a message</h2>
+          <p>Review the request, retrieve product evidence, and prepare a draft for approval.</p>
+        </section>
+
+        <section id="review-view" class="review-view" hidden>
+          <div class="message-header">
+            <div>
+              <div class="message-labels"><span id="category-badge" class="badge"></span><span id="risk-badge" class="risk-badge"></span><span id="urgency-badge" class="urgency-badge" hidden>Urgent</span></div>
+              <h2 id="message-subject"></h2>
+              <p id="message-sender" class="sender-line"></p>
+            </div>
+            <button id="draft-button" class="button button-primary">Generate draft</button>
+          </div>
+
+          <div class="review-grid">
+            <div class="left-column">
+              <section class="section-block original-message">
+                <div class="section-heading"><h3>Original email</h3><span id="message-id" class="mono-label"></span></div>
+                <p id="message-body" class="email-body"></p>
+              </section>
+              <section class="section-block evidence-section">
+                <div class="section-heading"><h3>Knowledge evidence</h3><span id="knowledge-state" class="state-label">Not queried</span></div>
+                <div id="evidence-list" class="evidence-list"><p class="muted">Generate a draft to query the shared Knowledge Brain.</p></div>
+              </section>
+              <section id="audit-section" class="section-block audit-section" hidden>
+                <div class="section-heading"><h3>Review record</h3><span id="audit-outcome" class="state-label"></span></div>
+                <dl id="audit-details" class="audit-details"></dl>
+              </section>
+            </div>
+
+            <div class="right-column">
+              <section class="draft-panel">
+                <div class="section-heading"><div><p class="eyebrow">RESPONSE WORKSPACE</p><h3>Suggested reply</h3></div><span id="draft-status" class="state-label">No draft</span></div>
+                <div id="blocking-state" class="blocking-state" hidden></div>
+                <label class="field-label" for="summary-field">Request summary</label>
+                <p id="summary-field" class="summary-field">No summary yet.</p>
+                <label class="field-label" for="reply-field">Reply text</label>
+                <textarea id="reply-field" rows="11" placeholder="A grounded draft will appear here after generation." disabled></textarea>
+                <p id="next-action" class="next-action" hidden></p>
+                <div id="review-controls" class="review-controls" hidden>
+                  <button id="send-button" class="button button-primary">Approve &amp; simulate send</button>
+                  <button id="reject-button" class="button button-secondary">Reject and replace</button>
+                  <button id="expert-button" class="button button-quiet">Request expert help</button>
+                </div>
+                <div id="correction-fields" class="correction-fields" hidden>
+                  <label class="field-label" for="correction-reason">Correction reason</label>
+                  <input id="correction-reason" type="text" maxlength="1000" placeholder="What needs to change?">
+                  <label class="field-label" for="replacement-field">Replacement reply (saved, not sent)</label>
+                  <textarea id="replacement-field" rows="5" maxlength="5000"></textarea>
+                  <button id="save-rejection-button" class="button button-secondary">Save rejection</button>
+                </div>
+                <div id="expert-fields" class="correction-fields" hidden>
+                  <label class="field-label" for="expert-reason">Why does this need an expert?</label>
+                  <input id="expert-reason" type="text" maxlength="1000" placeholder="Describe the missing decision or evidence">
+                  <button id="save-expert-button" class="button button-secondary">Escalate for review</button>
+                </div>
+                <p class="draft-footnote">Product facts must be supported by the sources shown. Price, refund, scope, and delivery commitments require an authorized reviewer.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script type="module" src="/ui.js"></script>
+</body>
+</html>

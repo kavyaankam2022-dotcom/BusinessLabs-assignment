@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Knowledge Brain | BusinessLabs</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-mark">B</span>
+          <div>
+            <div class="eyebrow">PRODUCT KNOWLEDGE</div>
+            <strong>Knowledge Brain</strong>
+          </div>
+        </div>
+        <span id="status-pill" class="status-pill idle">Ready</span>
+      </header>
+
+      <main class="content-grid">
+        <section class="chat-panel">
+          <h1>Ask the product knowledge base</h1>
+          <label class="field-label" for="question-input">Question</label>
+          <textarea id="question-input" rows="4" placeholder="Example: How do I change the site logo?"></textarea>
+          <div class="button-row">
+            <button id="ask-button" class="primary-button">Ask</button>
+            <button id="clear-button" class="secondary-button" type="button">Clear</button>
+          </div>
+
+          <div id="answer-box" class="answer-box">
+            <div class="empty-state">No answer yet. Ask a product question to retrieve grounded documentation.</div>
+          </div>
+        </section>
+
+        <aside class="meta-panel">
+          <div class="meta-card">
+            <div class="card-title">Result state</div>
+            <div id="result-state" class="state-badge neutral">Waiting</div>
+          </div>
+
+          <div class="meta-card">
+            <div class="card-title">Cited sources</div>
+            <ul id="source-list" class="source-list">
+              <li>None yet.</li>
+            </ul>
+          </div>
+
+          <div class="meta-card">
+            <div class="card-title">Images</div>
+            <ul id="image-list" class="source-list">
+              <li>None yet.</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="/ui.js"></script>
+  </body>
+</html>

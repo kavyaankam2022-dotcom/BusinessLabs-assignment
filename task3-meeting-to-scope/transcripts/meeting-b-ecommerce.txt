@@ -1,0 +1,9 @@
+[00:00] Client: We want a shorter checkout with fewer fields and an order confirmation for both the buyer and our staff.
+[00:18] Consultant: Which fields can be removed, and which are required for fulfillment?
+[00:31] Client: Phone number is optional. Shipping address and email are required.
+[00:48] Client: We also need to connect our AcmePay merchant account. Their team says they have an API, but we do not have test credentials yet.
+[01:08] Consultant: Is the payment provider already supported by the current product configuration?
+[01:18] Client: We are not sure. We need to confirm whether saved cards or tokenization are involved.
+[01:36] Client: Order notifications should include the order number and the items purchased.
+[01:53] Consultant: We need the approved notification template and payment-provider documentation before scoping that integration.
+[02:08] Client: We can provide redacted checkout screenshots and vendor documentation after this meeting.
